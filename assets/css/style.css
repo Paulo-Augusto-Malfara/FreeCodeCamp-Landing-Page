@@ -1,6 +1,92 @@
-/* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-  } */
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
+:root {
+  --primary-color: rgb(0, 204, 255);
+  --secondary-color: rgb(0, 150, 187);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  background: linear-gradient(360deg, var(--primary-color), white);
+  font-family: "rubik", sans-serif;
+  margin-top: 13em;
+}
+
+#header-img {
+  width: 7em;
+  border-bottom-right-radius: 15px;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+}
+
+#nav-bar {
+  display: flex;
+  align-items: center;
+  gap: 10em;
+  margin-right: 7em;
+}
+
+@media (max-width: 800px) {
+  #nav-bar {
+    gap: 5em;
+    margin-right: 5em;
+  }
+}
+
+@media (max-width: 600px) {
+  #nav-bar {
+    gap: 3em;
+    margin-right: 1em;
+  }
+}
+
+.nav-link {
+  font-family: "rubik", sans-serif;
+  color: black;
+}
+
+.nav-link:hover {
+  box-shadow: 5px 5px 5px black;
+  padding: 0.5em;
+  border-radius: 15px;
+  background-color: var(--secondary-color);
+  animation-duration: 2s;
+}
+
+#form {
+  text-align: center;
+  line-height: 1.5em;
+  font-size: 2em;
+  padding: 2em;
+}
+
+#email-input {
+  width: 18em;
+  padding: 0.5em;
+}
+
+#submit {
+  width: 18em;
+  padding: 0.8em;
+  font-weight: bold;
+}
+
+#submit:hover {
+  background-color: var(--secondary-color);
+  color: white;
+}
